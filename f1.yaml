@@ -1,0 +1,25 @@
+- name: "Sindhuja Muddana"
+  dob: "23-03-1998"
+  age: 27
+
+  # Object 1
+  addresses:
+  - doorNo: 2-47
+    street: "Ramalayam"
+    city: "hyderabad"
+    pin: 523186
+    type: "current"
+ 
+ # Object 2
+  - doorNo: 2-47
+    street: "Ramalayam"
+    city: "hyderabad"
+    pin: 523186
+    type: "Permanent"
+  skills:
+  - java
+  - python
+  - C
+
+
+
