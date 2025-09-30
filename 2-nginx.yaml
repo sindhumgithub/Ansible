@@ -1,5 +1,6 @@
 - name: install and start nginx
   hosts: frontend
+  become: yes
 
   tasks:
   - name: install nginx
@@ -12,7 +13,7 @@
       name: nginx
       state: started
       enabled: yes
-      
+
 
 
 
