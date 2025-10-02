@@ -4,7 +4,7 @@
   vars_prompt:
     - name: username
       prompt: What is your username?
-      rivate: false
+      private: false
   
   tasks:
     - name: Print username and password details
