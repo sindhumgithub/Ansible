@@ -1,5 +1,5 @@
 - name: Variable level playbook
-  hosts: local
+  hosts: ip-172-31-29-217.ec2.internal
   connection: local
   vars:
     COURSE: Ansible
