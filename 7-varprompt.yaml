@@ -2,14 +2,14 @@
   hosts: ip-172-31-29-217.ec2.internal
 
   vars_prompt:
-  - name: username
-    prompt: What is your username?
-    private: false
+    - name: username
+      prompt: What is your username?
+      private: false
   
   tasks:
-  - name: Print username and password details
-    ansible.buitin.debug:
-      msg: "Hello username is:: {{ username }}"
+    - name: Print username and password details
+      ansible.builtin.debug:
+        msg: "Hello username is:: {{ username }}"
     
 
 
