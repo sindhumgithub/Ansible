@@ -1,5 +1,5 @@
 - name: This is for prompting values from user
-  hosts: ip-172-31-29-217.ec2.internal
+  hosts: ip-172-31-26-10.ec2.internal
 
   vars_prompt:
     - name: username
