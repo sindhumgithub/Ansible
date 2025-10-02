@@ -6,12 +6,8 @@
     DURATION: 10HRS
     TRAINER: SivaKumar Reddy
 
-    Course: Terraform
-    Duration: 20HRS
-    Trainer: SivaKumar Reddy
-
   tasks:
   - name: Print the course info
     ansible.builtin.debug:
       msg: "Your Course Name is::  {{ COURSE }}, Duration is:: {{ DURATION }}, Trainer is:: {{TRAINER }}"
-      msg: "Your Course Name is::  {{ Course }}, Duration is:: {{ Duration }}, Trainer is:: {{Trainer }}"
+      
