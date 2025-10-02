@@ -2,14 +2,14 @@
   hosts: ip-172-31-29-217.ec2.internal
   connection: local
   vars:
-    COURSE: DevOps with AWS     # Variable level value
+    COURSE: DevOps with AWS     # Variable level variable
     DURATION: 10HRS
     TRAINER: SivaKumar Reddy
 
   tasks:
   - name: Print the course info
     vars:
-      COURSE: Ansible               # Task level value
+      COURSE: Ansible               # Task level variable
     ansible.builtin.debug:
       msg: "Your Course Name is::  {{ COURSE }}, Duration is:: {{ DURATION }}, Trainer is:: {{TRAINER }}"
       
