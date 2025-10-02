@@ -1,0 +1,24 @@
+- name: vars preference
+  hosts: local
+  connection: local
+
+  vars:            # variable level 
+    NAME:  from play level
+
+  vars_files:       # variable file level by passing values to course.yaml file
+  - course.yaml
+
+  vars_prompt:      # variables from keyboard/user
+    - name: NAME
+      prompt: What is your name ?
+      private: false     
+
+  
+  # List of tasks/collections/modules
+  tasks:                      # From task level
+  - name: testing variables preference
+    vars:
+      NAME:  from task level
+    
+    ansible.builtin.ping:
+      msg: "Name: {{ NAME }}"
