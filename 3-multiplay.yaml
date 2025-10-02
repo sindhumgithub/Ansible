@@ -12,7 +12,7 @@
 
 
 # This is my play-02
-- name: PLAY-01
+- name: PLAY-02
   hosts: ip-172-31-26-10.ec2.internal
   tasks:
   - name: PLAY-02 and TASK-01
