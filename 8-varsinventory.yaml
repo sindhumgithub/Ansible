@@ -1,5 +1,5 @@
 - name: variables from inventory file..
-  hosts: local
+  hosts: ip-172-31-24-43.ec2.internal
   connection: local
   
   tasks:
