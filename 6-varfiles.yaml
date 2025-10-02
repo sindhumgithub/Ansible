@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: ip-172-31-29-217.ec2.internal
+  hosts: 172.31.29.217
   connection: local
   vars_files:
   - course.yaml
