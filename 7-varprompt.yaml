@@ -1,0 +1,16 @@
+- name: This is for prompting values from user
+  hosts: 
+
+  vars_prompt:
+    - name: username
+      prompt: What is your username?
+      private: false
+  
+  tasks:
+    - name: Print username and password details
+      ansible.buitin.debug:
+        msg: "Hello username is:: {{ username }}"
+    
+
+
+
