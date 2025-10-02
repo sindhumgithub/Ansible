@@ -4,7 +4,7 @@
   vars:
     COURSE: Ansible
     DURATION: 10HRS
-    Trainer: SivaKumar Reddy
+    TRAINER: SivaKumar Reddy
 
     Course: Terraform
     Duration: 20HRS
@@ -13,5 +13,5 @@
   tasks:
   - name: Print the course info
     ansible.builtin.debug:
-      msg: "Your Course Name is::  {{ COURSE }}, Duration is:: {{ DURATION }}, Trainer is:: {{Trainer }}"
+      msg: "Your Course Name is::  {{ COURSE }}, Duration is:: {{ DURATION }}, Trainer is:: {{TRAINER }}"
       msg: "Your Course Name is::  {{ Course }}, Duration is:: {{ Duration }}, Trainer is:: {{Trainer }}"
