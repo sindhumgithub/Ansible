@@ -1,0 +1,9 @@
+- name: variables from arguments
+  hosts: ip-172-31-24-43.ec2.internal
+
+  
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "Course name is: {{ course }}, Duration is:: {{ duration }}, Trainer is:: {{ trainer }}"
+
