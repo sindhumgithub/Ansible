@@ -1,0 +1,16 @@
+- name: split function in ansible 
+  hosts: local
+  connection: local
+
+  vars:
+    tags:
+      - key: Application
+        value: payment
+      - key: Environment
+        value: dev
+
+  tasks:
+  - name: Convert list to dictionary
+    ansible.builtin.debug:
+      msg: "Techologies are:: {{ tags | items2dict }}"
+
