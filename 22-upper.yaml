@@ -7,4 +7,4 @@
   tasks:
   - name: Convert to upper characters
     ansible.builtin.debug:
-      student_yaml: "{{ name | upper }}"
+      msg: "{{ name | upper }}"
