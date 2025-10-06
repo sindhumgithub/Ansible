@@ -1,0 +1,21 @@
+- name: Yaml to Json
+  hosts: local
+  connection: local
+  vars:
+    tags:
+      Application: payment
+      Environment: dev
+
+  tasks:
+  - name: Read yaml file and take into variable.
+    ansible.builtin.set_fact:
+      student_yaml: "Techologies are:: {{ lookup('file' | 'student.yaml') | from_yaml }}"
+
+  - name: convert yaml into Json
+    ansible.builtin.debug:
+      msg: "json: {{ student_yaml | to_json }}"
+
+  - name: save json to file.
+    ansible.builtin.copy:
+      dest: ./student.json
+      content: "{{ f1.yaml | to_nice_json }}"
