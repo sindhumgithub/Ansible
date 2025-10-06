@@ -1,0 +1,15 @@
+- name: Convert to Upper characters
+  hosts: local
+  connection: local
+  vars:
+    ipaddress: "192.45.96"
+
+  tasks:
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+
+  - name: print the command_output
+    ansible.builtin.debug: 
+      msg: "{{ command_output }}"
+
