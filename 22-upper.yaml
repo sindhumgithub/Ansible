@@ -1,0 +1,10 @@
+- name: Convert to Upper characters
+  hosts: local
+  connection: local
+  vars:
+    name: "Sindhuja Muddana"
+
+  tasks:
+  - name: Convert to upper characters
+    ansible.builtin.debug:
+      student_yaml: "{{ name | upper }}"
