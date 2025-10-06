@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    name: "Sindhuja Muddana"
+    peru: "Sindhuja Muddana"
     email: Info@GMAIL.COM
 
   tasks:
   - name: Convert to upper characters
     ansible.builtin.debug:
-      msg: "{{ name | upper }}"
+      msg: "{{ peru | upper }}"
 
   - name: Convert to upper characters
     ansible.builtin.debug:
