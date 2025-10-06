@@ -1,0 +1,10 @@
+- name: Convert to Upper characters
+  hosts: local
+  connection: local
+  vars:
+    ip_address: "192.45.96"
+
+  tasks:
+  - name: Check whether IP address is valid or not
+    ansible.builtin.debug:
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"
