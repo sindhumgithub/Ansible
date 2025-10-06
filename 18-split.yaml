@@ -1,0 +1,12 @@
+- name: split function in ansible 
+  hosts: local
+  connection: local
+
+  vars:
+    technologies: DevOps, Linux, Shell, Ansible
+
+  tasks:
+  - name: Convert string to list
+    ansible.builtin.debug:
+      msg: "Techologies are:: {{ technologies | split(',') }}
+
