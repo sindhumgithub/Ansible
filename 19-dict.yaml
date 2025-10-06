@@ -1,0 +1,14 @@
+- name: split function in ansible 
+  hosts: local
+  connection: local
+
+  tags:
+    Application: payment
+    Environment: dev
+
+  tasks:
+  - name: Convert string to list
+    ansible.builtin.debug:
+      msg: "Techologies are:: {{ technologies | split(',') }}"
+      msg: "Techologies are:: {{ technologies | dict2items }}"
+
