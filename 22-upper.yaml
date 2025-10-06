@@ -12,4 +12,4 @@
 
   - name: Convert to upper characters
     ansible.builtin.debug:
-      msg: "{{ name | lower }}"
+      msg: "{{ email | lower }}"
