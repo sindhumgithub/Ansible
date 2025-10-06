@@ -1,4 +1,4 @@
-- name: split function in ansible 
+- name: dict function in ansible 
   hosts: local
   connection: local
   vars:
@@ -9,5 +9,5 @@
   tasks:
   - name: Convert map to list
     ansible.builtin.debug:
-      msg: "Techologies are:: {{ technologies | dict2items }}"
+      msg: "Techologies are:: {{ tags | dict2items }}"
 
