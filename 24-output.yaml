@@ -1,15 +1,13 @@
-- name: Convert to Upper characters
+- name: Storing the input in a varaible and display the output.
   hosts: local
   connection: local
-  vars:
-    ipaddress: "192.45.96"
 
   tasks:
   - name: grep for root
-    ansible.builtin.shell: cat /etc/passwd | grep root
-    register: command_output
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: result
 
-  - name: print the command_output
-    ansible.builtin.debug: 
-      msg: "{{ command_output }}"
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ result }}"
 
