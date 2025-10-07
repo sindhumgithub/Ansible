@@ -6,8 +6,8 @@
   - name: redirect the output
     ansible.builtin.shell: ls -lthr > /tmp/output.txt
     register: redirect_result
+    ignore_errors: true
 
   - name: print the output
     ansible.builtin.debug:
       msg: "{{ redirect_result }}"
-
