@@ -15,4 +15,4 @@
 
   - name: create a new user
     ansible.builtin.command: useradd roboshop
-    when: user_output.rc = 1
+    when: user_output.rc == 1
