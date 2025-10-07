@@ -1,0 +1,13 @@
+- name: Storing the input in a varaible and display the output.
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: redirect the output
+    ansible.builtin.shell: ls -lthr > /tmp/output.txt
+    register: redirect_result
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ redirect_result }}"
+

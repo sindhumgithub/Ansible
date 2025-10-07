@@ -10,6 +10,6 @@
     ansible.builtin.debug:
       msg: "{{ peru | upper }}"
 
-  - name: Convert to upper characters
+  - name: Convert to lower characters
     ansible.builtin.debug:
       msg: "{{ email | lower }}"
