@@ -1,4 +1,4 @@
-- name: Redirecting the output using the shell module
+- name: Ignoring errors using error handling
   hosts: local
   connection: local
 
